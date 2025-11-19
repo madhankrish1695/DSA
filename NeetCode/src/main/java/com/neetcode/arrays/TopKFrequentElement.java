@@ -1,4 +1,4 @@
-package com.practice.arrays;
+package com.neetcode.arrays;
 
 import java.util.*;
 

@@ -1,10 +1,10 @@
-package com.practice.arrays;
+package com.neetcode.arrays;
 
 import java.util.*;
 
 /**
  * Given an array of strings strs, group all anagrams together into sublists. You may return the output in any order.
- </p>
+ * </p>
  * An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
  */
 public class GroupAnagram {
@@ -12,9 +12,9 @@ public class GroupAnagram {
     public static void main(String[] args) {
         GroupAnagram groupAnagram = new GroupAnagram();
 
-        System.out.println(groupAnagram.groupAnagrams(new String[] {"act","pots","tops","cat","stop","hat"}));
-        System.out.println(groupAnagram.groupAnagrams(new String[] {"x"}));
-        System.out.println(groupAnagram.groupAnagrams(new String[] {""}));
+        System.out.println(groupAnagram.groupAnagrams(new String[]{"act", "pots", "tops", "cat", "stop", "hat"}));
+        System.out.println(groupAnagram.groupAnagrams(new String[]{"x"}));
+        System.out.println(groupAnagram.groupAnagrams(new String[]{""}));
     }
 
     public List<List<String>> groupAnagrams(String[] strs) {

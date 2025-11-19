@@ -1,4 +1,4 @@
-package com.practice.arrays;
+package com.neetcode.arrays;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,8 +11,8 @@ public class ContainsDuplicate {
     public static void main(String[] args) {
         ContainsDuplicate containsDuplicate = new ContainsDuplicate();
 
-        int[] nums1 = {1,2,3,3};
-        int[] nums2 = {1,2,3};
+        int[] nums1 = {1, 2, 3, 3};
+        int[] nums2 = {1, 2, 3};
 
         System.out.println(containsDuplicate.hasDuplicate(nums1));
         System.out.println(containsDuplicate.hasDuplicate(nums2));
@@ -20,8 +20,8 @@ public class ContainsDuplicate {
 
     public boolean hasDuplicate(int[] nums) {
         Set<Integer> numSet = new HashSet<>();
-        for(int i : nums){
-            if(!numSet.add(i)){
+        for (int i : nums) {
+            if (!numSet.add(i)) {
                 return true;
             }
         }

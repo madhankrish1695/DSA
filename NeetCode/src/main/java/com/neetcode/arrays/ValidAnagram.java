@@ -1,4 +1,4 @@
-package com.practice.arrays;
+package com.neetcode.arrays;
 
 /**
  * Given two strings s and t, return true if the two strings are anagrams of each other, otherwise return false.
@@ -13,25 +13,25 @@ public class ValidAnagram {
         String s2 = "jar";
         String t2 = "jam";
 
-        System.out.println(validAnagram.isAnagram(s1,t1));
-        System.out.println(validAnagram.isAnagram(s2,t2));
+        System.out.println(validAnagram.isAnagram(s1, t1));
+        System.out.println(validAnagram.isAnagram(s2, t2));
     }
 
     public boolean isAnagram(String s, String t) {
 
-        if(s.length() != t.length()){
+        if (s.length() != t.length()) {
             return false;
         }
 
         int[] charArr = new int[26];
 
-        for(int i = 0; i < s.length(); i++){
-            charArr[s.charAt(i)-'a']++;
-            charArr[t.charAt(i)-'a']--;
+        for (int i = 0; i < s.length(); i++) {
+            charArr[s.charAt(i) - 'a']++;
+            charArr[t.charAt(i) - 'a']--;
         }
 
-        for (int i : charArr){
-            if(i != 0) return false;
+        for (int i : charArr) {
+            if (i != 0) return false;
         }
 
         return true;
