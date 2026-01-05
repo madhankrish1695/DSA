@@ -47,8 +47,8 @@ public class IsomorphicStrings {
     public boolean isIsomorphicUsingArray(String s, String t) {
         if (s.length() != t.length()) return false;
 
-        int[] sArr = new int[126];
-        int[] tArr = new int[126];
+        int[] sArr = new int[128];
+        int[] tArr = new int[128];
 
         for (int i = 0; i < s.length(); i++) {
             char sChar = s.charAt(i);
