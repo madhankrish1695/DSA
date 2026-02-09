@@ -36,7 +36,7 @@ public class PathSum {
 
         int targetSum = 22;
 
-        System.out.println(pathSum.hasPathSum(root, targetSum)); // true
+        System.out.println(pathSum.hasPathSum(root, targetSum));
     }
 
     public boolean hasPathSum(TreeNode root, int targetSum) {
