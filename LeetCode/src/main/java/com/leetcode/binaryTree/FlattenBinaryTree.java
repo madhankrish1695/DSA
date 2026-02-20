@@ -7,10 +7,10 @@ package com.leetcode.binaryTree;
  * and the left child pointer is always null.
  * The "linked list" should be in the same order as a pre-order traversal of the binary tree.
  */
-public class FlattenBinaryTee {
+public class FlattenBinaryTree {
 
     public static void main(String[] args) {
-        FlattenBinaryTee flattenBinaryTee = new FlattenBinaryTee();
+        FlattenBinaryTree flattenBinaryTee = new FlattenBinaryTree();
         TreeNode root = flattenBinaryTee.getInput();
         flattenBinaryTee.flatten(root);
         flattenBinaryTee.print(root);
